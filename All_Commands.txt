@@ -1,0 +1,982 @@
+su = go into root/super user
+about:cache = type this in firefox url and it gives cache size
+alias = lists aliases 
+apropos php = info about php modules 
+alsactl -v = prints alsa mixer's version 
+amixer = info about amixer component 
+amixer info = info about amixer 
+amixer -c = available amixer controls 
+anacron -v = version of anacron 
+aplaymidi -v = version of aplay 
+apm -v = version of apm 
+apropos php = info about all php modules 
+arecord -v = version of arecord 
+
+bc = starts a command line calculator 
+
+The cp command is used to copy files. 
+Following are the most common options for cp: 
+Option           Description 
+-f     = Forces copy; does not ask for verification 
+-I     = Interactive copy; before each file is copied, verifies with user 
+-R, -r = Copies directories recursively 
+---------------------------------------------------------------------------------------------
+cal = shows calendar 
+cal 2009 = shows 2009 calendar 
+cal -j = prints current month's calendar where days are numbered 
+cal -m = pritns current month's calendar where Monday is the 1st day 
+cal -y = prints current year's calendar 
+cal 12 2005 = prints December month of 2005 
+
+cat /var/log/yum.log 
+cat /var/log/yum.log | grep mysql = mysql install and update dates 
+cat /proc/meminfo = prints memory info 
+cat /proc/cpuinfo = prints cpu info 
+cat /proc/devices = list of devices 
+cat /proc/statistics = disk statictics 
+cat /proc/filesystems = file system info 
+cat /proc/interrupts = IRQ channel assignments 
+cat /proc/iomem = physical memory addresses 
+cat /proc/ioport = virtual memory addresses 
+cat /proc/keys = list of keys kept by kernel 
+cat /proc/loadavg = shows 1 5 15 min load averages 
+cat /proc/misc = list of devices 
+cat /proc/modules = list of loaded modules 
+cat /proc/mounts = list of mounts 
+cat /proc/partitions = list of partitions 
+cat /proc/mdstat = RAID status 
+cat /proc/stat = kernel statictics 
+cat /proc/swaps = list of swaps 
+cat /proc/uptime = uptime in seconds 
+cat /proc/version = kernel version 
+cat /var/xyz.txt = prints output of a file 
+cat /selinux/enforce = current status of selinux 
+cat /etc/shells = lists all installed shells on the os 
+cat /etc/inittab = info about run levels 
+cat filename | sort = sorting output in alphabetical order 
+cat filename.txt | less = shows contents of the file, scroll bar fixed, q to quit 
+cat filename.txt | more = shows contents of the file, page by page, spacebar to another page 
+cat /etc/x11/xorg.conf = monitor info 
+cat -s filename.txt = shows consecutive blank lines as one 
+cat -n filename.txt = shows all lines with numbers 
+cat -b filename.txt = shows only none-blank lines with numbers 
+cat filename.txt | head = gives top 10 lines ie head of the file 
+cat filename1 filename2 > filename3 = merges the files 
+cat filename1 filename2 >> filename3 = adds contents to another files 
+cat /etc/fstab = list of all devices 
+cat /etc/filesystems = of file systems 
+cat /etc/fedora-release = Fedora release/version no 
+cat /etc/issue = Linux distro name 
+cat /var/log/messages | grep -F ntpd = 
+cat /var/log/wtmp = lists all logins and logouts 
+cat /run/utmp = lists last reboots and shutdowns 
+cat /bin/ls | strings = lists all ASCII text in ls 
+
+cat abc.txt | tr '[a-z]' '[A-Z]' = converts file into uppecase 
+cat abc.txt | tr '[a-z]' '[A-Z]' > uppecase.txt = converts file into a new file 
+
+cat /usr/include/asm/unistd.h = list of system calls 
+cat /usr/include/asm/unistd.h | wc -l = number of system calls 
+
+cd / = takes into root directory 
+cdrecord -scanbus = lists available cd/dvd devices 
+
+chkconfig –list mysqld = mysql configuration details 
+chsh username /bin/bash = 
+chsh -s new-shell username = change the default shell to a new one 
+clear = clears the screen/prompt 
+
+chmod o=rwx, g=rw, u=r /usr/local/bin = change file permissions 
+chmod ogu=rwx /usr/local/bin = change file permissions 
+
+chcon = change the context directory
+
+convert imagename.jpg imagename.png = converts jpg image into png 
+convert imagename.gif imagename.bmp = converts gif image into bmp 
+convert imagename.tiff imagename.pcx = converts tiff image into pcx 
+convert -resize 340x140 image1.jpg image2.jpg = resizes jpg image 
+convert -sample 50%x50% image1.jpg image2.jpg = resizes jpg image 
+convert -rotate 90 image1.jpg image2.jpg = rotates jpg image 50 degrees 
+convert -fill blue -pointsize 80 -font helvetica -draw 'text 10,50 “my image”' img1.jpg img2.jpg = inserts text into jpg image 
+convert -thumbnail 120x120 a.jpg b.png = converts jpg image into png image 
+convert -thumbnail 120x120 -polaroid 8 a.jpg b.png = converts into polaroid picture 
+convert -thumbnail 120x120 -polaroid 8 -rotate 8 a.jpg a-c.png = converts and rotates 
+convert -sepia-tone 75% imga.jpg imgb.png = changes tone of image 
+convert -charcoal 5 house.jpg char-house.png = changes tone of image 
+convert -colorize 175 house.jpg color-house.png = changes color of image 
+
+Ctrl+Alt+delete = restarts Linux 
+Ctrl+Alt+backspace = restarts login screen 
+Ctrl+Shift+Ins(Insert) = pasting something from other source ie web page etc to command prompt 
+Ctrl+C = clear the command line if the output keeps running..... 
+
+date = prints today's date 
+date ‘+%A %B %d %G’ = display day, month, day of month, year 
+date ‘+The date today is %F.’ = displays date in yyyy-mm-dd format 
+date --date=’2 weeks’ = displays date two weeks from today 
+date –date='20 days' = displays date 20 days from today 
+date –date='2 months' = displays date 2 months from today 
+date –date='2 years' = displays date 2 years from today 
+date –date=’2 years 2 months 2 days’ = displays date 2 years 2 months 2 days from today 
+date --date=’14 Jul’ +%A = display day on which July 14 falls 
+
+diff oldfile.txt newfile.txt = checks difference between two files 
+
+dig yahoo.com = gives info about yahoo website 
+
+dmesg = a summary of hardware profile 
+dmesg | head n -5 = shows first 5 lines 
+dmesg | head -5 = shows first 5 lines 
+dmesg | tail -n 4 = shows last 4 lines 
+dmesg | tail -4 = shows last 4 lines 
+dmesg | grep ATA = shows lines containing ATA 
+dmidecode = BIOS info 
+dmidecode | head -n10 = first 10 lines of BIOS info 
+dmidecode –-type baseboard = baseboard info 
+dmidecode –-type cache = cache info 
+dmidecode –-type chassis = chassis info 
+dmidecode –-type connector = connector info 
+dmidecode –-type memory = memory info 
+dmidecode –type processor = processor info 
+dmidecode –-type slot = slot info 
+dmidecode –-type system = system info 
+dmidecode –-type wrongtype = gives right words/types 
+
+dos2unix abc.txt xyz.txt = converts file into unix format 
+
+dvdrecord -scanbus = lists dvd devices 
+
+df -l = 
+df -h = free hard drive space 
+df = free hard drive space 
+du -sh = disk usage 
+du -h = hard drive usage 
+
+dialog –msgbox “Hello” 8 12 = create dialog box 
+dialog –title “Check me” --checklist “Pick numbers” 12 15 2 1 “First” “on” 2 “Second” “off” = create checklist 
+
+echo $SHELL = prints the default shell name 
+echo $OSTYPE = prints the operating system name 
+echo 'text' = prints what is held in the quotes 
+echo $HOME = prints home directory 
+echo $USER = who is currently using the system 
+echo $HISTFILE = location of history file 
+echo $HISTFILESIZE = history's set size 
+echo $HISTSIZE = history's set size 
+echo “test” | mail -v -s test xyz@abc.com = sending e-mail from a terminal 
+
+ethtool eth0 = info about ethernet connection 
+ethtool -i eth0 = driver for ethernet 
+ethtool -S eth0 = statictics for ethernet 
+ethtool l0 = info about local loop 
+
+egrep “one/two/three” filename = looks for any of these 3 words in a file 
+env = prints all environment variables 
+expr 7 + 8 = simple command based calculator (mind the spaces in the equation) 
+
+/etc/init.d/httpd status = service status 
+/etc/init.d/mysqld start = starts mysql server 
+/etc/init.d/oracle-xe start = starts oracle server 
+
+exec ls -l = runs ls command and closes the terminal 
+exec uptime = runs uptime command and closes terminal 
+
+fc -l = short command history 
+fdisk -l = list of partitions on the hdd 
+fdisk -l /dev/hda = partitions within a specific partition 
+fdisk /dev/hda = master device on IDE channel 0 
+fdisk /dev/hdb = slave device on IDE channel 0 
+fdisk /dev/hdc = master device on IDE channel 1 
+fdisk /dev/hdd = slave device on IDE channel 1 
+
+find /usr/bin -amin -30 = finds files accessed in last 30 minutes in /usr/bin 
+find /usr/bin -atime +50 = finds files not accessed for than 50 days 
+find /usr/bin -perm 750 = finds files with permission 750 
+find /usr/bin -user root = finds files owned by root in /usr/bin 
+find /usr/bin -user root | wc -l = calculates total no of files owned by root 
+find ! /usr/bin -user root = finds files not owned by user root 
+find ! /usr/bin -user root | wc -l = calculates no of files not owned by root 
+find -iname filename.ext = finds a file by name 
+find . = lists all files and subdirectories in the current directory 
+find . -size +200M = finds files more than 200M in size 
+find . -size +200M -ls = more details 
+find . -name *.txt -size +40K = finds .txt file names of more than 40 k in size 
+find /usr/share/docs | xargs grep -l 'keyword' = finds files that contain the keyword from documents 
+finger = log in details 
+
+free = memory usage in kb 
+free -b = memory usage in mb 
+free -m = memory usage in blocks 
+free -mt = memory usage in totals 
+free -g = memory usage in gigabytes 
+free -s 5 = update memory usage every 5 seconds 
+
+fuser -amuv /boot = shows processes with /boot open (a = all, m = man, u = user, v = verbose) 
+fuser /boot = shows parent pids for processes opening /boot 
+fuser -m /boot = shows pids for processes opening /boot 
+fuser -u /boot = shows pids for user 
+fuser -k /boot = kills all processes with /boot files open 
+fuser -l = lists supported signals 
+fuser -k -HUP /boot = kills all processes running /boot by sending HUP signal 
+
+getenforce = status of selinux 
+gdmsetup = display configuration client/gui 
+glxinfo = graphics card info 
+glxinfo | direct = check if direct randering is on 
+
+gnome-terminal -x alsamixer = stars terminal with alsamixer displayed
+gnome-terminal -tab -tab -tab = stars terminal with 3 open tabs 
+gnome-terminal -geometry 80*20 = stars terminal 80 characters and 20 lines 
+gnome-terminal -zoom=2 = stars terminal with larger fonts 
+
+grep india /usr/share/dict/words = looks for the word 'india' in dictionary 
+grep “word” filename.txt = prints lines with the “word ” in them 
+grep –color “word” filename.txt = prints lines with the word in color 
+grep 300 filename.txt = prints lines with 300 in them 
+grep -n “word” filename = line numbers with the word in them printed 
+grep -vn “word” filename = lines without the “word” in them 
+grep -c “word” filename = total no. of occurrences of “word” 
+grep -n “word” * = lists all lines from all files that contain “word” 
+grep -R myword /etc/bin* = lists lines with their file names in the directory containing myword 
+grep -h -R myword /etc/bin* = lists lines without their file names containing myword 
+grep -Rn myword /etc/bin* = lists lines containing myword with their numbers 
+grep –color -R myword /etc/bin* = lists lines in the directory containing myword in color 
+grep -Rl myword /etc/bin* = lists file names in the directory containing myword 
+grep -x “word” * = only “word” a line 
+grep word filename.txt = searchers for the word in the file (case sensitive) 
+grep word -n filename.txt = lists lines containing word with their numbers 
+grep -i word filename = searchers for the word in the file (i = not case sensitive) 
+grep -i word1 word2 filename = searchers for the word in the file 
+groups = list of groups 
+
+gzip = only zips, gunzip = unzips + untars, tar = zips + unzips with czvf, xzvf 
+gzip abc.txt = zips a file 
+gzip -1 abc.txt = fast compression but poor quality 
+gzip -9 abc.txt = slow compression but good quality 
+gzip -rv foldername = zips all files in the folder 
+gzip -tv abc.txt.gz = checks integrity if gz file with verbose 
+gzip -lv abc.txt.gz = gives info about gz file 
+gunzip -v abc.txt.gz = unzips gz file with verbose 
+gunzip -c abc.tar.gz | tar x = unzips and untars a file (two steps) 
+gunzip abc.tar.gz; tar xf abc.tar = unzips then untars a file (two steps) 
+
+hal-device-manager = opens a gui for hardware profiling 
+head -6 .bash_history = first 6 commands 
+head -5 filename.txt = prints first 5 lines of the file 
+head -n 5 filename.txt = prints first 5 lines of the file 
+
+history 5 = last five commands 
+history | wc -l = total history commands 
+history | grep rpm = search through history for rpm commands 
+history = list of all commands used so far 
+
+hostname = name of the host 
+hostnamectl set-hostname -name- = change hostname
+hwclock –show = prints today's date and time 
+hwclock –set –date =”2/22/2008 12:25:30” = reset new time and date 
+
+identify imagename.jpg = gives image info 
+identify -verbose imangename.jpg | less = gives info about image 
+identify -verbose imangename.jpg | more = gives more info about image 
+id = info about user/root's groupid/uid etc 
+ifconfig = network card info, ipaddress etc. 
+ifconfig -a = available network cards 
+ifconfig [name of the network] 192.168.1.2 netmask 255.255.255.0  = to change the ip address.
+info coreutils = info about core commands 
+iostat 3 = checks disk reads 
+iostat -c 3 = updates cpu usage 
+iostat -c -t = cpu usage with time 
+iostat -c -t 2 10 = repeat cpu usage info every 2 seconds 10 times 
+ip a = available network interfaces 
+ip addr = ip addresses by method of connection ie ppp0 
+ip addr show eth0 = ip address for ethernet connection 
+ip calc -bnm 192.168.0.1/27 = displays netmast ip from CIDR 
+ip route = checks routing table 
+isoinfo = info about iso 
+iwconfig = checks for wireless connection 
+iwlist = checks for a wireless access point 
+
+kded –version = kde version 
+kde-config –version = kde version 
+
+kill 23456 = kills process with id 23456 
+kill -9 1234 = sends SIGKILL to id 1234 
+kill -SIGCONT 1234 = sends SIGCONT to id 1234 
+kill 4% = kills the process represented by 4% job 
+kill sttd = kills all sttd daemons running 
+
+last = last log in details 
+lastlog [-u root] = last log in time 
+last [root] = entire log in history, the feature needs to be activated first 
+lastb [root] = prints failed login attempts 
+
+less filename.txt = prints contents of the file, scroll bar fixed, Press q to quite and spacebar to go to another page 
+less filename.txt = prints contents of the file, scroll bar fixed, press spacebar 
+less filename /word = searches for word
+less filename.log = prints contents of the file, Press q to quite and spacebar to go to another page
+
+ln -s originalfile newfile = creates a symbolic link to new file 
+locate xyz = locates file xyz case-sensitive 
+locate -i xyz = locates file xyz not case-sensitive 
+locate -r /ls$ = locates files ending in /ls 
+locate -r james*bond = locate files with james and bond in their names 
+locate -r ^ boot/grub/me = locate files beginning with boot/grub/me 
+locate *.jpg > Desktop/myjpgs.txt = stores results of search in a file named myjpgs.txt 
+lsmod = lists kernel modules installed 
+lsmod | sort -k 2,2n = sorts kernel modules in increasing size order 
+
+(LS command)
+ls /var/www/html/*.html = lists all html files 
+ls .??* = lists all directory names that start with a dot . 
+ls /etc/rc.d = prints all directories for all available run levels 
+ls /etc/rc.d/init.d = list of system services' scripts 
+ls -l = lists files and folders in the current directory 
+ls -la = lists hidden files and folders in the current directory with a dot 
+ls li = files with their inodes 
+ls -lt = files recently modified 
+ls -lu = lists files by their accss time 
+ls -ln = user names and groups numerically displayed 
+ls -lh = human readable file sizes 
+ls -lR = displays all the files and their folders 
+ls -F = lists files by type 
+ls -c = lists files columnwise 
+ls -l = Long listing. In addition to the filename	
+ls -a = All files. 	
+ls -t = Lists in order of last modified time. 	
+ls -r = Reverses the listing. 	
+ls -1 = Single-column listing. 	
+ls -R = Recursively lists all files and subdirectories.
+ls –color =always = shows filenames in colors 
+ls -l /var/lib/rpm = rpm database 
+ls = lists contents of a directory 
+ls . = lists contents of a directory 
+ls .. = lists contents of a directory 
+ls / = lists all system directories 
+ls = lists directories in current directory 
+ls /var = lists all subdirectories under the /var directory 
+ls /proc | wc -l = number of subdirectories in /proc directory 
+ls -ltr = 
+ls -l filename.ext = checks permissions for a file 
+ls -l /etc = permission status of all subdirectories 
+ls -a = shows hidden . Dot directories. A kind of special configuration files not be messed with 
+ls tr | '\n' ' ' = replaces all newline characters with spaces 
+ls tr | -d '\n' = deletes newlines 
+ls /var/lib/mysql = list of databases in blue color 
+
+lsof = list of open directories and files 
+lsof -c bash = list of files open by bash shells 
+lsof -d cwd = list of directories open as current working directory 
+lsof -u james = list of files and directories open by user james 
+lsof /mnt/sda1 = list of anything open on /mnt/sda1 file system 
+lsof +d /mnt/sda1/dx = list of anything open under /mnt/sda1/dx directory 
+
+lpadmin = Linux printer details 
+lspci = info about pci devices/ports 
+lspci | grep VGA = graphics card info 
+lspci | grep audio = audio card info 
+lspci | grep -i modem = modem info 
+lspci | grep -i usb = usb ports info 
+lspci | grep -i ethernet = ethernet card info 
+
+The mv command is used to move files from one location to another. Files can be moved across partitions/file systems as well. 
+Following are the most common options for mv:
+Option        Description
+mv [options] [-T] source destination  =  Rename a file named source to destination.
+mv [options] source [source2 ...] destination  =  Move source file(s) to a directory named destination.
+mv [options] -t destination source [source2 ...]  =  specifying the directory first, and the source file(s) last
+mv myfile.txt myfiles  =  Move the file myfile.txt into the directory myfiles.
+mv myfiles myfiles2  =  If myfiles is a file or directory, and myfiles2 is a directory, move myfiles into myfiles2. If myfiles2 does not exist, the file or directory myfiles is renamed myfiles2.
+mv myfile.txt ../  =  Move the file myfile.txt into the parent directory of the current directory.
+mv -t myfiles myfile1 myfile2  =  Move the files myfile1 and myfile2 into the directory myfiles.
+mv myfile1 myfile2 myfiles  =  Same as the previous command.
+mv -n file file2  =  If file2 exists and is a directory, file is moved into it. If file2 does not exist, file is renamed file2. If file2 exists and is a file, nothing happens.
+mv -f file file2  =  If file2 exists and is a file, it will be overwritten.
+mv -i file file2  =  If file2 exists and is a file, a prompt is given.
+
+mv -f  =  force move by overwriting destination file without prompt
+mv -i  =  interactive prompt before overwrite
+mv -u  =  update - move when source is newer than destination
+mv -v  =  verbose - print source and destination files
+
+man mv	help manual
+man -f php = info about php modules 
+man -k php = info about php modules 
+man php = php manual pages 
+man man = info about manual pages and their format 
+man 3 php = shows entries for php in 3rd section of the manual 
+man php | grep word = searches for a particular word in php manual 
+man hier = info about directories 
+md5sum xyz.iso = checksum verification 
+more filename.txt = shows contents of a file page by page (press spacebar) 
+mount = files system type per device 
+mount /mnt/cdrom = mounts cd rom 
+mount -t iso9660 /dev/sr1 ./cdrom = mount cdrom
+mysql = launches mysql 
+mysql -u root -p = asks for a password to launch mysql 
+my old.txt new.txt = renames a file 
+
+netstat = info about active Internet connections 
+netstat -i = netstat statictics 
+netstat -tanp = shows active tcp connections 
+netstat -uanp = shows active udp connections 
+
+od -c -t x1 filename.txt = list of newline characters in Linux 
+
+ogg123 mysong.ogg = plays ogg file 
+ogg123 http://xyz.com/music/audio.ogg = plays from web address 
+ogg123 -z *.ogg = play files in pseudo-random order 
+ogg123 -Z *.ogg = same -z, but repeats forever 
+ogg123 /var/music/ = plays songs in /var/music and sub dirs 
+ogg123 -@myplaylist = plays songs from playlist 
+
+pgrep httpd = gives process id for httpd 
+pgrep -l init = gives process id for processes containing init as string 
+ps -lu james = all processes owned by james 
+php --help = shows all php help pages in full 
+php --help | less = shows limited php help pages, scroll bar fixed, q to exit 
+php -v = php version 
+php --version = php version 
+pirut = 
+passwd = asks for a new password for root 
+
+play musicfilename.wav = plays music file 
+play *.wav = plays all wav files upto 32 
+play audio.au vol. 6 = plays audio file with volume level 6 
+play -r 12000 short.aiff = sampling rate of 12000 
+
+ps ajfx = process hierarchy in BSD style 
+ps ax = lists all running processes 
+ps aux = lists all running processes with BSD cycle 
+ps auwx = running processes with wide format 
+ps auwwx = running processes with unlimited width 
+ps auwx | sort -r -k 4,4 = sort processes on descending memory usage 
+ps auwx | head -4 = prints first 4 lines of a process 
+ps auwx | head -n 4 = prints first 4 lines of a process 
+ps auwx | tail -4 = prints last 4 lines of a process 
+ps auwx | tail -n 4 = prints last 4 lines of a process 
+ps auwx | less = shows contents of a process, scroll bar fixed 
+ps auwx | more = shows contents of a process page by page (press spacebar) 
+ps auwx | grep init = shows lines containing init in them 
+ps auwx | grep “\[*\]” = shows bracketed comments 
+ps = list of processes by current user in current shell 
+ps -C httpd = process info for http 
+ps -p 5323 -o pid,ppid,bsdtime,args = process info for id 5323 
+ps -U james,john -o pid,ruser,tty,stat,args = process info for 2 users 
+ps -e = lists all running processes 
+ps -e | wc -l = number of all running processes 
+ps -ef = lists all running processes with format listing 
+ps -ef –forest = process hierarchy in forest format 
+ps -eF = lists all running processes with full format listing 
+ps -ejH = process hierarchy 
+ps -el = lists all running processes with long listing 
+ps -eo ppid,user,%mem,size,vsize,comm –sort=-size = multiple parameters 
+ps -eo ppid,user,bsdstart,bsdtime,%cpu,args –sort=-%cpu = multiple parameters 
+ps -eo ppid,user,bsdstart,bsdtime,%cpu,args –sort=-%cpu = multiple parameters 
+ps -eo ppid,user,stat,tname,sess,cputime,args –sort=user = multiple parameters 
+pstree = processes in alphabetical order in tree format 
+ps -u root = list of processes run by user root 
+ps -u root u = list of processes run by root with cpu usage 
+ps -fu root = list of processes run by root with PPID 
+pwd = current working directory 
+pwd -P = one level up from current working directory 
+pwd -L = one level down from current working directory 
+
+printenv | less = prints all environment variables 
+ps -ef | grep root = processed owned by root 
+
+ramsize = info about ram 
+reboot = reboots the pc 
+redhat-logviewer = opens a GUI tool for log monitoring 
+repoquery -il tomcat5 = list of files in tomcat5 package in any repo 
+repoquery --provides php = info about php modules 
+
+rm ~/.bash_history = clears history of commands 
+rm -f *.doc = removes/deletes all files of .doc extension in a folder 
+
+rpm = (Red Hat Package Manager)
+rpm2cpio xyz.rpm > xyz.cpio = extracts cpio archive from rpm package 
+rpm2cpio xyz.rpm | cpio -tv = lists the contents of archive 
+rpm -e xyz = removes package xyz 
+rpm -e –nodeps xyz-5.6.fc5.i386 = removes 32+ bit version of package if more versions available 
+rpm -ivh xyz.rpm = install package xyz (i=install, v=verbose, h=hash) 
+rpm -ivh http://ftp.abc.com/xyz.rpm = install package xyz from the site 
+rpm -Uvh xyz.rpm = update package xyz (U=update) 
+rpm -q --scripts kernel |less = list of all preinstall & post-install scripts 
+rpm -q php = php version no. 
+rpm -qi php = php install info 
+rpm -qi fedora-release = Fedora installation info 
+rpm -qi php/per/python/ruby = version info for the package 
+rpm -qa grun = prints grub version no. 
+rpm -qa php = prints php version no. 
+rpm -qa | sort | pr –column=2 | less = shows installed packages in 2 columns per page 
+rpm -qa | sort | pr –column=2 > abc.txt = saves output to a file 
+rpm -qa | sort | pr –column=2 | lpr = sends output to a printer 
+rpm -qa | grep kernel | sort = sorts installed packages in alphanumeric order 
+rpm -qa | grep kernel | sort -r = sorts in reverse alphanumeric order 
+rpm -qa | grep php = prints version nos. of all php related packages
+rpm -qa | grep samba = check if samba is installed
+rpm -qa | head = only 10 softwares listed 
+rpm -qa | head -n5 = first 5 software listed 
+rpm -qa | wc -l = total no of packages installed on the system 
+rpm -ql php = lists all files in a particular package 
+rpm -qal | grep php = find php in all installed packages 
+rpm -ql php | wc -l = total no. of files in a particular package 
+rpm -qa | grep php | wc -l = count the total number of php modules 
+rpm -qf /var/lib/php = what package a particular file belongs to 
+rpm -q --scripts mysql = scripts of a package 
+rpm -qa php | wc -l = total no. of php packages 
+rpm -qi php = info about php 
+rpm -q –last php = installation date of php 
+rpm -qi php | grep -i vendor = php vendor name 
+rpm -qi fedora-release | grep -i vendor = prints vendor name from a file named fedora-release 
+rpm -v = rpm version 
+
+rpm -qa --queryformat '%{NAME}==%{VENDOR}\n' | grep -v "Red Hat" | sort = list of installed packages with their vendor names except Red Hat 
+rpm -qa --qf '%{NAME}==%{VENDOR}\n' | grep "Red Hat" | sort = list of installed packages with their vendor name as Red Hat 
+rpm -qa --qf '%{NAME}==%{VENDOR}\n' | sort = list of installed packages with their vendor names 
+rpm -qa --qf '%{NAME}==%{VENDOR}\n' | grep "Red Hat" | wc -l = total number of installed packages with Red Hat as their vendor 
+
+rpm -qa --qf '%{NAME}==%{LICENSE}\n' | sort = list of all installed packages with their licence type sorted alphabetically 
+rpm -qa --qf '%{NAME}==%{LICENSE}\n' | wc -l = total number of installed packages with their licence type 
+rpm -qa --qf '%{NAME}==%{LICENSE}\n' | grep php | sort = list of all php packages with their licence types sorted alphabetically 
+rpm -qa --qf '%{NAME}==%{LICENSE}\n' | grep php | wc -l = total number of all php packages with their licence types 
+
+rpm -qa --qf '%{NAME}==%{SIZE}\n' | sort = list of all installed packages with their names and sizes in bytes sorted alphabetically 
+rpm -qa --qf '%{NAME}==%{SIZE}\n' | grep php | sort = list of all php packages with their names and sizes in bytes sorted alphabetically 
+rpm -qa --qf '%{NAME}==%{SIZE}\n' | grep php | wc -l = total number of installed php packages with their names and sizes in bytes 
+
+rpm -qa --qf '%{NAME}==%{SUMMARY}\n' | sort = list of all installed packages with their names and functions sorted alphabetically 
+rpm -qa --qf '%{NAME}==%{SUMMARY}\n' | grep php | sort = list of all php packages with their names and functions sorted alphabetically 
+rpm -qa --qf '%{NAME}==%{SUMMARY}\n' | grep php | wc -l = total number of all php packages with their names and functions 
+
+rpm -qa --qf '%{NAME}==%{BUILDHOST}\n' | sort = list of all installed packages with their names and buildhosts sorted alphabetically 
+rpm -qa --qf '%{NAME}==%{BUILDHOST}\n' | grep php | sort = list of all php packages with their names and buildhosts sorted alphabetically 
+rpm -qa --qf '%{NAME}==%{BUILDHOST}\n' | grep php | wc -l = total number of all php packages with their names and buildhosts 
+
+rpm -qa --qf '%{NAME}==%{URL}\n' | sort = list of all installed packages with their names and urls sorted alphabetically 
+rpm -qa --qf '%{NAME}==%{URL}\n' | grep php | sort = list of all php packages with their names and urls sorted alphabetically 
+rpm -qa --qf '%{NAME}==%{URL}\n' | grep php | wc -l = total number of all php packages with their names and urls 
+
+rpm -qa --qf '%{NAME}==%{ARCH}\n' | sort = list of all installed packages with their names and architecture type sorted alphabetically 
+rpm -qa --qf '%{NAME}==%{ARCH}\n' | grep php | sort = list of all php packages with their names and architecture type sorted alphabetically 
+rpm -qa --qf '%{NAME}==%{ARCH}\n' | grep php | wc -l = total number of all php packages with their names and architecture type 
+
+rpm –querytags = list of all rpm query tags 
+rpm –querytags | wc -l = total number of rpm tags 
+rpm -Va = verify all installed packages 
+rpm -Va | grep php = verify php packages only 
+rpm -Vv | grep php = check php packages only with verbose 
+rpm --query --all = a long listing of software installed
+rpm --query bash bash-4.2.* = To locate one of the packages listed in the output of the preceding command.
+
+root = superuser, who has permission to do anything 
+/root = root account's home directory 
+
+sha1sum xyz.iso = checksum verification 
+stat filename = prints access/modification right to a file 
+set = list of all enviornmental variables 
+set | wc -l = total number of enviornmental variables 
+set history = 60 = history of commands set to 60 
+set | less = prints all shell variables, scroll bar fixed 
+
+setserial -g /dev/ttys0 /dev/ttys1 /dev/ttys2 /dev/tty3 = info about serial ports 
+setserial -ga /dev/ttys0 = info about one serial port 
+stty -F /dev/ttys0 -a = info about serial port 
+
+service httpd start = starts apache server 
+service mysqld start = starts mysql server 
+service --status-all = service status of all the services installed 
+
+shutdown = shutdowns the pc 
+shutdown -r = reboot 
+shutdown -0 (Zero) = reboot 
+shutdown – h = halt 
+
+sort filename | uniq = sorting only unique lines in output 
+sortsorttempfile = sorted in a separate file 
+
+/sbin/ifconfig = network info 
+/sbin/lspci | grep -i vga = graphics card info 
+
+strings /bin/ls | grep -i libc = finds all occurrences of libc in ls 
+strings /bin/ls = lists all ASCII text in ls 
+su -c 'gedit /etc/yum.conf' = opens yum.conf file in gedit 
+
+tail -3 ok = last 3 lines from a file named ok 
+tail -6 .bash_history = last 6 commands 
+tail -5 filename.txt = prints last 5 lines of the file to the screen 
+tail -n 5 filename.txt = prints last 5 lines of the file 
+tail -f /var/log/messages = updates size of text file as it gets bigger 
+tail -f /var/log/messages = displays system messages live 
+tail -f /var/log/maillog = displays mail server messages live 
+tail -f /var/log/httpd/access_log = displays web server messages live 
+
+tar cvf abc.tar abc.txt = tars a file with verbose 
+tar xvf abc.tar = untars a file with verbose 
+tar c abc.txt | gzip -c > abc.tar.gz = archives file and zips a file (two steps) 
+tar czf abc.tar.gz abc.txt = archieves and zips a file (one step, z = unzip, c = create) 
+tar czvf abc.tar.gz abc.txt = archieves and zips a file with verbose 
+tar cjvf abc.tar.bz2 abc.txt = archieves and zips a file with bzip2 
+tar xzvf abc.tar.gz = unzips and untars file (one step, x = untar) 
+tar xjvf abc.tar.bz2 = unzips and untars file (one step, j = bzip2) 
+tar –xvzf abc.tar.gz = unzips and installs(-xvzf the f stands for forceful if the f is there it will bw forcefully installed)
+
+time = prints current time 
+time yum/command name = command's excution time 
+top = lists process with cpu usage 
+top -d 5 = changes update delay to 5 seconds (from default 3) 
+top -u james = process info for user james 
+top -p 190,2690 = process for for id 190 and 2690 
+top -n 10 = refreshs the screen 10 times before quitting 
+top -b = runs in non-interative non-screen-oriented mode 
+touch name.txt = creates a file named name.txt 
+touch name.log = create a log file
+touch /var/log/btmp = enables recording of bad attempts 
+tree -dx = directory structure of the os 
+type php = path of executables/shell commands 
+
+tr a A < filename.txt = replaces a with A 
+tr -d a < filename.txt = deletes all a characters 
+
+uname = operating system name 
+uname -a = architecture type 
+uname -r = Linux version 
+uname -o = operating system name 
+uname -m = system architecture 
+uname -n = host name 
+uname -p = processor architecture 
+uname -s = os name 
+uname -v = Linux update time 
+uname –hardware-platform 
+uuidgen = strange key 
+ulimit -a = limit on a variety of system resources 
+unmount /mnt/cdrom = unmounts cd rom 
+uptime = how long the computer has been up and running 
+
+unix2dos abc.txt xyz.txt = converts file into dos format 
+
+/usr/share/background/images = database of background images 
+
+/var/log/lastlog = login database, open with vi etc 
+/var/log/wtmp = history of all logins and attempts 
+
+vmstat = virtual memory usage 
+vmstat 5 = updates virtual memory every 5 seconds 
+vmstat -k = virtual memory in 1000-byte kilobytes 
+vmstat -K = virtual memory in 1024-byte kilobytes 
+vmstat -m = virtual memory in 1000-kilobyte megabytes 
+vmstat -M = virtual memory in 1024-kilobyte megabytes 
+vmstat -m | less = kernel memory slab 
+vmstat -S M -s | less = displays statictics in megabytes 
+
+watch 'cat /proc/loadavg' = check command output every 2 seconds, press Ctl+C to stop... 
+watch -n 10 'ls -l' = checks command ouput every 10 seconds 
+watch 'ls -l download.jpg' = checks file size as it is being downloaded 
+wc -w filename = no. of words in a file 
+wc -l filename = no of lines 
+whatis php = info about php modules 
+whatis php-pdo = info about php-pdo module 
+whereis php = locations of php binary, source and man pages 
+whereis -m php = location/path of the php manual 
+whereis -m php | awk '{print $2}' = 2nd part of the command output 
+which php = full path of executables/shell commands 
+who | sort = names of users logged in 
+who | wc -l = no of users 
+whoami = who is logged in 
+who = who is logged in 
+
+wget ftp.foldername.xyz.jpg = downloads a file 
+
+xrandr -q = screen resolution 
+
+yum clean all = Runs yum clean packages
+yum clean headers = Eliminate all of the header files which yum uses for  dependency resolution.
+yum clean metadata = This cleans up any xml metadata that may have been cached from any enabled repository.
+yum clean packagename = clean packages left in cache 
+yum –enablerepo =livna install mplayer = enable livna repo & install mplayer 
+yum --disablerepo = livna search php = disable livna repo and search other repos for php 
+yum groupinfo = This will give you detailed information for each group including: description, mandatory, default and optional packages.
+yum grouplist [hidden] = This will list the installed and available groups for your system in two separate lists. If you pass the optional 'hidden' argument then all of the groups which are set to 'no' in the group xml <uservisible> tag.
+yum groupinstall XFCE = installs entire group XFCE 
+yum groupremove php = remove entire php group 
+yum groupupdate XFCE = updates for group XFCE 
+yum install php/perl/etc = installs packages 
+yum install php* = installs all php packages 
+yum install hwbrowser = 
+yum install lshw = 
+yum -y install samba-client = update/install samba client
+yum list available = lists all packages available for installation 
+yum list extras – packages not installed from any repo 
+yum list installed = lists all installed softwares 
+yum list php* = lists all php packages 
+yum list updates = updates available 
+yum list updates php = updates available for php 
+yum localinstall xyz.rpm = installs packages from the HDD or CD/DVD
+yum remove php = remove php 
+yum search "php" = 
+yum update php/perl/etc = updates packages 
+yum whatprovides php = 
+
+----------------------------------------------------------------------------------------------------------- 
+. = current directory 
+.. = parent directory 
+!! = repeat the last command 
+!1003 = call a particular command 
+!?php? = run last command containing the string php 
+!rpm = run the last rpm command 
+!yum = run the last yum command 
+fc 140 = opens command number 140 in vi editor 
+per* = without asteriks press 'Tab' key once to complete the command 
+
+---------------------------------------------------------------------------------------- 
+Using Command Line Completion 
+
+tracer = Completes to traceroute command 
+cd /home/ch = Completes to /home/chris directory 
+cd ~jo = Completes to /home/john 
+echo $PA = Env variable completion: Completes to $PATH 
+ping = Show hosts from /etc/hosts 
+
+!# /bin/bash filename.sh = executing a shell script 
+
+/ = root directory for the entire system 
+
+Type the first few letters of a command and then press the 'Tab' key twice to list the commands that start with those letters. 
+Press the 'Tab' key twice at an empty command prompt and you will get a list of all the commands. 
+Manual pages for each package ie php etc. are divided into 8 sections namely general user commands, system calls, programming routines, special files, configuration files, games, miscellaneous and administrative commands and respective daemons. 
+----------------------------------------------------------------------------------------------------------- 
+How to install downloaded binaries: 
+
+bunzip xyz.123.tra.bz2tar xyz.123./ configure 
+make 
+su -root (make sure you are root or someone with the install privilege) 
+make install 
+make clean 
+---------------------------------------------------------------------------------------------------------------- 
+Permissions: 
+
+rwx rwx rwx 
+1 2 3 
+u g o 
+
+u = user 
+g = group 
+o = other 
+r = read = 4 
+w = write = 2 
+x = execute = 1 
+
+0 = no permissions whatsoever; this person cannot read, write, or execute the file
+1 = execute only
+2 = write only
+3 = write and execute (1+2)
+4 = read only
+5 = read and execute (4+1)
+6 = read and write (4+2)
+7 = read and write and execute (4+2+1)
+
+Command          	Purpose
+chmod 600 apple.txt	Owner has read and write permissions.(-rw-------)
+chmod 644 apple.txt	Owner has read and write permissions; group and world have read-only permission.(-rw-r--r--)
+chmod 666 apple.txt    	Everyone has read and write permissions.(-rw-rw-rw-)
+chmod 700 apple.txt	Only you can read, write to, or execute apple.txt
+chmod 777 apple.txt	Everybody can read, write to, or execute apple.txt
+chmod 744 apple.txt	Only you can read, write to, or execute apple.txt Everybody can read apple.txt;
+chmod 444 apple.txt	You can only read apple.txt, as everyone else.
+
++ = add user 
+- = remove user 
+chmod = change mode
+chmod o-r = remove/delete the read permission from other group 
+chmod g+w = add write permission to group 
+------------------------------------------------------------------------------------------------------------- 
+MySQL: 
+
+grant all privileges on *.* to root@”localhost” identified by 'password'; 
+grants all privileges on all databases to root 
+------------------------------------------------------------------------------------------------------- 
+(ECHO command)
+echo $SHELL = prints the default shell name
+echo $OSTYPE = prints the operating system name
+echo 'text' = prints what is held in the quotes
+echo $HOME = prints home directory
+echo $USER = who is currently using the system
+echo $HISTFILE = location of history file
+echo $HISTFILESIZE = history's set size
+echo $HISTSIZE = history's set size
+echo “test” | mail -v -s test xyz@abc.com = sending e-mail from a terminal
+
+(MAN command)
+man -f php = info about php modules
+man -k php = info about php modules
+man php = php manual pages
+man man = info about manual pages and their format
+man 3 php = shows entries for php in 3rd section of the manual
+man php | grep word = searches for a particular word in php manual
+man hier = info about directories
+ 
+(LSPCI command)
+lspci = info about pci devices/ports
+lspci | grep VGA = graphics card info
+lspci | grep audio = audio card info
+lspci | grep -i modem = modem info
+lspci | grep -i usb = usb ports info
+lspci | grep -i ethernet = ethernet card info
+
+.............................................(LS command).............................................
+ls /var/www/html/*.html = lists all html files
+ls .??* = lists all directory names that start with a dot .
+ls /etc/rc.d = prints all directories for all available run levels
+ls /etc/rc.d/init.d = list of system services' scripts
+ls -l = lists files and folders in the current directory
+ls -la = lists files and folders in the current directory with a dot
+ls li = files with their inodes
+ls -lt = files recently modified
+ls -lu = lists files by their accss time
+ls -ln = user names and groups numerically displayed
+ls -lh = human readable file sizes
+ls -lR = displays all the files and their folders
+ls -F = lists files by type
+ls -c = lists files columnwise
+ls –color =always = shows filenames in colors
+
+ls -l /var/lib/rpm = rpm database 
+ls = lists contents of a directory
+ls . = lists contents of a directory
+ls .. = lists contents of a directory
+ls / = lists all system directories
+ls = lists directories in current directory
+ls /var = lists all subdirectories under the /var directory 
+ls /proc | wc -l = number of subdirectories in /proc directory
+ls -ltr = 
+ls -l filename.ext = checks permissions for a file
+ls -l /etc = permission status of all subdirectories
+ls -a = shows hidden . Dot directories. A kind of special configuration files not be messed with
+
+(LOCATE command)
+locate xyz = locates file xyz case-sensitive
+locate -i xyz = locates file xyz not case-sensitive
+locate -r /ls$ = locates files ending in /ls
+locate -r james*bond = locate files with james and bond in their names
+locate -r ^ boot/grub/me = locate files beginning with boot/grub/me
+locate *.jpg > Desktop/myjpgs.txt = stores results of search in a file named myjpgs.txt
+
+..........................................(ps command)..............................................
+To view all the running processes use either of the following commands:
+ps -A 
+ps -e
+To show all of the processes except for session leaders run the following command:
+ps -d
+You can negate any of the selections that you have chosen by using the -N switch. For example if you want to see just the session leaders run the following command:
+ps -d -N
+If you want to see only the processes associated with this terminal run the following command:
+ps T
+If you want to see all the running processes using the following command:
+ps r
+
+Selecting Specific Processes Using The ps Command
+
+You can return specific processes using the ps command and there are various ways to change the selection criteria.
+For instance if you know the process id you can simply use the following command:
+ps -p <pid>
+You can select multiple processes by specifying multiple process IDs as follows:
+ps -p "1234 9778"
+You can also specify them using a comma separated list:
+ps -p 1234,9778
+The chances are that you won't know the process ID and it is easier to search by command. To do this use the following command:
+ps -C <command>
+For example to see if Chrome is running you can use the following command:
+ps -C chrome
+You might be surprised to see that this returns one process for each open tab.
+Other ways to filter results is by group. You can search by group name using the following syntax:
+ps -G <groupname>
+ps --Group <groupname>
+For example to find out all the processes being run by the accounts group type the following:
+ps -G "accounts"
+ps --Group "accounts"
+You can also search by group id instead of group name by using a lowercase g as follows:
+ps -g <groupid>
+ps --group <groupid>
+If you want to search by a list of session IDs use the following command:
+ps -s <sessionid>
+Alternatively use the following to search by terminal type.
+ps -t <sessionid>
+If you want to find all the processes run by a specific user try out the following command:
+ps U <userlist>
+For example to find all the processes ran by gary run the following:
+ps U "gary"
+Note that this shows the person whose credentials are used to run the command. 
+For example if I am logged in as gary and run the above command it will show all the command run by me.
+If I log in as Tom and use sudo to run a command as me then the above command will show Tom's command as being run by gary and not tom.
+To limit the list to just the processes really run by gary use the following command:
+ps -U "gary"
+
+..................................................................mysql..................................................................
+yum –y install community-mysql-server = installing mysql.
+service mysqld status = To check the status of MySQL.
+service mysqld start = To activate/start MySQL server.
+service mysqld stop = To turn off the MySQL service.
+mysql –u root = to start the MySQL client.
+\h = help
+exit = to exit the one you were in.
+show databases; = show a list of databases table
+show tables; = 
+use mysql; = To use the database mysql.
+select user,host,password from mysql.user; = Assigning password to user root is important when dealing with data entries, user profiles or passwords. To assign password to root account, enter.
+set password for root@localhost=password('password'); = set root password.
+set password for root@'127.0.0.1'=password('password'); = set root password.
+set password for root@'www.server.world'=password('password'); = set root password.
+mysql -pmypassword = to enter the password for mysql.
+mysql -u root -p = to enter the password for mysql.
+mysql --password=mypassword --user=me --host=etc = to enter the password for mysql.
+delete from mysql.user where user='root' and host='::1'; = delete IPV6 user ( if you don't need ).
+delete from mysql.user where user=''; = delete anonymous user.
+mysql> select user,host,password from mysql.user; = (table below)
++------+------------------+-------------------------------------------+
+| user | host | password |
++------+------------------+-------------------------------------------+
+| root | localhost | *xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
+| root | www.server.world | *xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
+| root | 127.0.0.1 | *xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
++------+------------------+-------------------------------------------+
+.......................................................................Directory..........................................................................
+mkdir = create directory
+rmdir = remove directory
+
+.......................................................................vi editor..........................................................................
+touch Filename = to create a file
+vi filename = to enter words into the file
+
+
+........................................................................Script............................................................................
+#!/bin/bash = start of creating the script
+echo "sentence" = say out the words inside the quotes
+read name = read the next line
+
+
+
+.........................................................................User.............................................................................
+useradd = create a new user or update default new user information.
+userdel = delete  a user
+usermod = modify user info
+usermod -G = add user to group
+
+
+.......................................................................Network............................................................................
+
+
+
+
+
+
+
+
+.......................................................................firewall............................................................................
+rpm -qa | grep iptables = verify that the package is istalled.
+iptables -L = to check the current configuration of firewall, enter the following command at shell prompt.
+vi /etc/sysconfig/iptables-config = to change the no to yes inside
+
+
+.........................................................................SSH...............................................................................
+service sshd start = to start the service
+service sshd stop = to stop the service
